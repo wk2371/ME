@@ -3,14 +3,14 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
-	<link href="wdcp.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
 	<title>About Me: Woochan Kim</title>
 </head>
 <body>
-	<header>
+	<header id="header">
 		<h1>About Me: Woochan Kim</h1>
 		<nav>
-			<ul>
+			<ul class="nav-menu">
 				<li><a href="#background">Background</a></li>
 				<li><a href="#interests">Interests</a></li>
 				<li><a href="#experiences">Experiences</a></li>
@@ -18,25 +18,28 @@
 		</nav>
 	</header>
 	<main>
-		<section id="background">
-			<h2>Background</h2>
-			<p>This section will provide information on my background: where I am from, where I studied, etc</p>
-			<p><a href="background.html">Learn more about my background →</a></p>
-		</section>
+		<!-- FLEXBOX container for horizontal sections -->
+		<div class="sections-container">
+			<section id="background" class="card">
+				<h2>Background</h2>
+				<p>This section will provide information on my background: where I am from, where I studied, etc</p>
+				<p><a href="background.html" class="btn">Learn more →</a></p>
+			</section>
+			
+			<section id="interests" class="card">
+				<h2>Interests</h2>
+				<p>This section will provide information about my interests, hobbies, and things I like to do during my free time</p>
+				<p><a href="interests.html" class="btn">Explore →</a></p>
+			</section>
+			
+			<section id="experiences" class="card">
+				<h2>Experiences</h2>
+				<p>This section will provide information about my experiences, both in academics or athletics</p>
+				<p><a href="experiences.html" class="btn">View →</a></p>
+			</section>
+		</div>
 		
-		<section id="interests">
-			<h2>Interests</h2>
-			<p>This section will provide information about my interests, hobbies, and things I like to do during my free time</p>
-			<p><a href="interests.html">Explore my interests →</a></p>
-		</section>
-		
-		<section id="experiences">
-			<h2>Experiences</h2>
-			<p>This section will provide information about my experiences, both in academics or athletics</p>
-			<p><a href="experiences.html">View my experiences →</a></p>
-		</section>
-		
-		<!-- Image placeholder - replace src with your actual image path -->
+		<!-- Image placeholder -->
 		<img src="image1.jpg" alt="Photo of Woochan Kim" width="300" height="300">
 	</main>
 	<footer>
